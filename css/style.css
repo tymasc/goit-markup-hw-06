@@ -1185,4 +1185,8 @@ text-align: center;
     .container-subscribe {
         margin: 0;
     }
+
+    .modal {
+        width: 408px;
+    }
 }
