@@ -861,7 +861,7 @@ button {
 
 .modal {
     width: 288px;
-    min-height: 584px;
+    min-height: 623px;
     background-color: #fcfcfc;
     border-radius: 4px;
     position: absolute;
@@ -1016,7 +1016,6 @@ button {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    ;
 }
 
 .privacy-text-checkbox {
