@@ -222,8 +222,8 @@ button {
 /* section-effective */
 .section-effective {
     background-color: #2E2F42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                     url(../images/Background.jpg);
@@ -245,7 +245,7 @@ button {
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 .button-order {
@@ -1080,5 +1080,109 @@ text-align: center;
                         rgba(46, 47, 66, 0.7)),
                             url(../images/Background@2x.jpg);
         background-size: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+    .list-navbar {
+        display: flex;
+    }
+
+    .info-company {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .address-info {
+        font-size: 12px;
+    }
+
+    .header-container {
+        padding: 0 16px;
+    }
+
+    .logo-company-web {
+        margin-right: 120px;
+    }
+
+    .text-effective {
+        font-size: 56px;
+        margin-bottom: 36px;
+    }
+
+    .section-effective {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+
+    .list-advantages {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .list-advantages-info {
+        width: calc((100% - 24px) / 2);
+    }
+    .text-list {
+        text-align: left;
+    }
+
+    .list-ourteam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    }
+
+    .list-info:not(:last-child) {
+        margin-bottom: 64px;
+    }
+
+    .list-info:last-child {
+        margin-bottom: 64px;
+    }
+
+    .section-our-team {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .list-ourportfolio-items {
+        width: calc((100% - 72px) / 2);
+    }
+
+    .list-ourportfolio {
+        justify-content: center;
+        row-gap: 72px;
+    }
+
+    .footer-container {
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: start;
+    }
+
+    .form-list-subscribe {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-logo {
+        width: calc((100% - 24px) / 2);
+        margin: 0 24px 0 0;
+        margin-bottom: 72px;
+    }
+
+    .container-subscribe {
+        margin: 0;
     }
 }
