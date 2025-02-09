@@ -103,7 +103,7 @@ button {
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .nav-bar {
@@ -398,7 +398,7 @@ button {
     width: 100%;
     padding-left: 28px;
     padding-right: 28px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 /* section-ourteam */
 
@@ -488,7 +488,7 @@ button {
 }
 
 .footer-container {
-text-align: center;
+    text-align: center;
 }
 
 .footer-logo {
@@ -1154,9 +1154,9 @@ text-align: center;
         padding-bottom: 96px;
     }
 
-    .list-ourportfolio-items {
-        /* width: calc((100% - 72px) / 2); */
-    }
+    /* .list-ourportfolio-items {
+        /* width: calc((100% - 72px) / 2);
+    } */
 
     .list-ourportfolio {
         justify-content: center;
@@ -1187,5 +1187,120 @@ text-align: center;
 
     .modal {
         width: 408px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .header-container {
+        justify-content: space-between;
+    }
+    
+    .section-effective {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    .text-effective {
+        font-size: 56px;
+        margin-bottom: 48px;
+    }
+
+    .section-advantages {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+
+    .list-advantages {
+        gap: 24px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .list-advantages-info {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .advantages-container-icon {
+        display: flex;
+    }
+
+    .section-ourportfolio {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .list-ourportfolio-items {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .footer-webstudio {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+
+    .footer-container {
+        text-align: left;
+        width: 1158px;
+        flex-wrap: nowrap;
+    }
+
+    .footer-logo {
+        margin: 0 120px 0 0;
+    }
+
+    .footer-icons-list {
+        justify-content: start;
+    }
+
+    .container-subscribe {
+        margin: 0 0 0 65px;
+    }
+
+    .form-list-subscribe {
+        gap: 24px;
+        flex-direction: row;
+    }
+
+    .modal {
+        width: 408px;
+    }
+
+    .input-subscribe {
+        opacity: 1;
+    }
+
+    .container {
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+
+    .text-list {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .info-company {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .address-info {
+        font-size: 16px;
+    }
+
+    .logo-company-web {
+        margin-right: 76px;
+    }
+
+    .list-ourportfolio {
+        row-gap: 48px;
+    }
+
+    .section-our-team {
+        padding-top: 72px;
+        padding-bottom: 72px;
     }
 }
