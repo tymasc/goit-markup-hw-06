@@ -81,7 +81,7 @@ button {
 }
 
 
-
+@media (min-width: 320px) {
 /* header */
 
 .header {
@@ -418,7 +418,6 @@ button {
 
 .list-ourportfolio-items {
     /* width: calc((100% - 48px) / 3); */
-    width: 100%;
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1067,7 +1066,7 @@ text-align: center;
 .button-send-modal:focus {
     background-color: #404BBF;
 }
-
+}
 /* modal-window */
 
 
@@ -1083,7 +1082,7 @@ text-align: center;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
+@media (min-width: 768px) {
     .list-navbar {
         display: flex;
     }
@@ -1156,7 +1155,7 @@ text-align: center;
     }
 
     .list-ourportfolio-items {
-        width: calc((100% - 72px) / 2);
+        /* width: calc((100% - 72px) / 2); */
     }
 
     .list-ourportfolio {
