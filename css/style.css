@@ -81,7 +81,7 @@ button {
 }
 
 
-@media (min-width: 320px) {
+
 /* header */
 
 .header {
@@ -100,7 +100,7 @@ button {
 }
 
 .container {
-    width: 100%;
+    max-width: 320px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
@@ -226,10 +226,10 @@ button {
     padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                    url(../images/Background.jpg);
+                    url(../images/Background320px.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
@@ -323,7 +323,7 @@ button {
 
 .list-info {
     background-color: #ffffff;
-    /* width: calc((100% - 72px) / 4); */
+    /* width: 320px; */
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -1065,23 +1065,29 @@ button {
 .button-send-modal:focus {
     background-color: #404BBF;
 }
-}
+
 /* modal-window */
 
 
 /* media */
 
-@media (min-resolution: 2x) {
+@media (min-width: 320px) and (min-resolution: 2x) {
     .section-effective {
-        width: 100%;
+        max-width: 320px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
-                            url(../images/Background@2x.jpg);
+                            url(../images/Background@2x320.jpg);
         background-size: cover;
     }
 }
 
+
 @media (min-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+
     .list-navbar {
         display: flex;
     }
@@ -1114,8 +1120,12 @@ button {
     }
 
     .section-effective {
+        max-width: 768px;
         padding-top: 112px;
         padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                    url(../images/Background768px.jpg);
     }
 
     .list-advantages {
@@ -1139,6 +1149,7 @@ button {
     justify-content: center;
     column-gap: 24px;
     }
+
 
     .list-info:not(:last-child) {
         margin-bottom: 64px;
@@ -1189,14 +1200,37 @@ button {
     }
 }
 
+@media (min-width: 768px) and (min-resolution: 2x) {
+    .section-effective {
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Background@2x768.jpg);
+        background-size: cover;
+    }
+}
+
+
 @media (min-width: 1158px) {
+
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+
     .header-container {
         justify-content: space-between;
     }
     
     .section-effective {
+        max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                    url(../images/Background1158px.jpg);
     }
 
     .text-effective {
@@ -1269,13 +1303,6 @@ button {
         opacity: 1;
     }
 
-    .container {
-        width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0 auto;
-    }
-
     .text-list {
         font-size: 20px;
         font-weight: 500;
@@ -1301,5 +1328,15 @@ button {
     .section-our-team {
         padding-top: 72px;
         padding-bottom: 72px;
+    }
+}
+
+@media (min-width: 1158px) and (min-resolution: 2x) {
+    .section-effective {
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Background@2x1158.jpg);
+        background-size: cover;
     }
 }
