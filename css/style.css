@@ -85,7 +85,7 @@ button {
 /* header */
 
 .header {
-    display: flex;
+    /* display: flex; */
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -1106,6 +1106,10 @@ button {
 
 @media (min-width: 768px) {
 
+    .backdrop-menu.is-open {
+        display: none;
+    }
+
     .container {
         min-width: 768px;
     }
@@ -1226,6 +1230,10 @@ button {
 
 
 @media (min-width: 1158px) {
+
+    .backdrop-menu.is-open {
+        display: none;
+    }
 
     .container {
         min-width: 1158px;
